@@ -1,0 +1,33 @@
+{
+  "name": "graph",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index",
+    "server": "nodemon index",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "andrew",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "@apollo/datasource-rest": "^5.0.1",
+    "@apollo/server": "^4.3.2",
+    "apollo-server": "^3.11.1",
+    "concurrently": "^7.6.0",
+    "graphql": "^16.6.0",
+    "graphql-compose": "^9.0.10",
+    "graphql-compose-json": "^6.2.0",
+    "node-fetch": "^3.3.0",
+    "nodemon": "^2.0.20"
+  }
+}
